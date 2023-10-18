@@ -5,7 +5,7 @@ Section: javascript
 Priority: optional
 Testsuite: autopkgtest-pkg-nodejs
 Build-Depends:
- debhelper-compat (= 13), , nodejs
+ debhelper-compat (= 13)
  , dh-sequence-nodejs
 Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-browser-stdout
@@ -16,8 +16,8 @@ Rules-Requires-Root: no
 Package: node-browser-stdout
 Architecture: all
 Depends:
- ${misc:Depends},
- , nodejs
+ ${misc:Depends}
+ , nodejs:any
 Multi-Arch: foreign
 Description: process.stdout in your browser
  This module implements process.stdout as found in Node.js for browsers to
